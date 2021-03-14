@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/user/source/repos/LabWork3/Do_while/Header.h
+
+C:/Users/user/source/repos/LabWork3/Do_while/task1_do_while.cpp
+iostream
+-
+Header.h
+C:/Users/user/source/repos/LabWork3/Do_while/Header.h
+

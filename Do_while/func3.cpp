@@ -6,6 +6,7 @@ void print(int n, int k)
 	double a = 0;
 	do
 	{
+		if (i > (n - 1)) { return; }
 		++i;
 		a += pow(-1, i) * (1 - (pow(2, i) / (pow(2, i) + 1)));
 		if ((i) % k > 0)  
