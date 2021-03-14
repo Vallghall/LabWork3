@@ -15,8 +15,8 @@ int main()
         "Task 5. Returns a number of the 1st negative row member for which (|ai|<=eps) is true." << "\n" <<
         "Task 6. Exit without calculating a thing" << "\n" <<
         "Please, enter the number of one of the given tasks: ";
-    cin >> n;
     do {
+        cin >> n;
         switch (n)
         {
         case 1:
