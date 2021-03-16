@@ -3,11 +3,13 @@ int findFirstNegativeElement(double eps)
 {
 	int i = 0;
 	double a = 0;
+	double s = pow(-1, i) * (1 - (pow(2, i) / (pow(2, i) + 1)));
 	do
 	{
-		if (fabs(pow(-1, i) * (1 - (pow(2, i) / (pow(2, i) + 1)))) < eps && (pow(-1, i) * (1 - (pow(2, i) / (pow(2, i) + 1)))) <= 0) { return(' '); }
-		a += pow(-1, i) * (1 - (pow(2, i) / (pow(2, i) + 1)));
+		if (fabs(s) <= eps && s < 0) { return(i); }
+		s = pow(-1, i) * (1 - (pow(2, i) / (pow(2, i) + 1)));
+		a += s;
 		++i;
-	} while (fabs(pow(-1, i) * (1 - (pow(2, i) / (pow(2, i) + 1)))) >= eps || (pow(-1, i) * (1 - (pow(2, i) / (pow(2, i) + 1)))) > 0 );
-	return(i - 1);
+
+	} while (true);
 }
